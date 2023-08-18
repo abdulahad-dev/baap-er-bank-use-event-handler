@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-[#ffafbd] to-[#ffc3a0]">
+    <header class="py-6">
+        <h2 class="text-center text-5xl">Let's get some Moooooooooooooney!!!</h2>
+    </header>
+    <main>
+        <section class="">
+            <div class="grid grid-cols-3 gap-4 justify-items-center">
+                <!-- Deposit Card  -->
+                <div>
+                    <div class="card w-96 bg-[#263268]">
+                        <svg class="ml-2.5 mt-2.5" xmlns="http://www.w3.org/2000/svg" width="30" height="18"
+                            viewBox="0 0 30 18" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.0001 2.97275C16.3462 4.56295 17.1667 6.67588 17.1667 8.9947C17.1667 11.3135 16.3462 13.4264 15.0001 15.0166C16.5244 16.8174 18.7227 17.9479 21.1668 17.9479C25.7692 17.9479 29.5002 13.9394 29.5002 8.9947C29.5002 4.05001 25.7692 0.0415497 21.1668 0.0415497C18.7227 0.0415497 16.5244 1.17199 15.0001 2.97275ZM15.0001 2.97275C13.4757 1.17199 11.2774 0.0415497 8.83333 0.0415497C4.23096 0.0415497 0.5 4.05001 0.5 8.9947C0.5 13.9394 4.23096 17.9479 8.83333 17.9479C11.2774 17.9479 13.4757 16.8174 15.0001 15.0166C13.654 13.4264 12.8335 11.3135 12.8335 8.9947C12.8335 6.67588 13.654 4.56295 15.0001 2.97275Z"
+                                fill="#5263B4" />
+                        </svg>
+                        <svg class="absolute right-0" xmlns="http://www.w3.org/2000/svg" width="178" height="46"
+                            viewBox="0 0 178 46" fill="none">
+                            <path
+                                d="M99.2345 45.1049C130.741 45.4243 164.827 31.5572 178.001 23.3906C167.435 26.9219 138.735 35.7651 110.04 31.9115C85.3149 28.5909 48.6467 10.2545 36.0819 0.462521L0.227595 0.0990799C20.1483 14.1725 61.6729 44.7242 99.2345 45.1049Z"
+                                fill="url(#paint0_linear_2303_36)" fill-opacity="0.5" />
+                            <defs>
+                                <linearGradient id="paint0_linear_2303_36" x1="88.777" y1="44.9989" x2="89.223"
+                                    y2="1.00119" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#506DF5" />
+                                    <stop offset="1" stop-color="#010204" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="card-body p-2">
+                            <h2 class="card-title text-white text-4xl font-bold pl-12">Deposit</h2>
+                            <div class="card-actions justify-end">
+                                <h3 class="text-4xl font-bold text-white pe-12">$<span id="deposit-total">00</span>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="178" height="44" viewBox="0 0 178 44"
+                            fill="none">
+                            <path
+                                d="M78.542 -8.39233e-05C47.0344 -8.59952e-05 13.0903 14.2118 0 22.5115C10.5292 18.8733 39.1378 9.73962 67.8705 13.3022C92.6283 16.372 129.48 34.3358 142.144 43.9999H178C157.938 30.1291 116.106 -8.14532e-05 78.542 -8.39233e-05Z"
+                                fill="url(#paint0_linear_2303_35)" fill-opacity="0.5" />
+                            <defs>
+                                <linearGradient id="paint0_linear_2303_35" x1="89" y1="-8.39233e-05" x2="89"
+                                    y2="43.9999" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#506DF5" />
+                                    <stop offset="1" stop-color="#010204" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Withdraw Card  -->
+                <div>
+                    <div class="card w-96 bg-[#263268]">
+                        <svg class="ml-2.5 mt-2.5" xmlns="http://www.w3.org/2000/svg" width="30" height="18"
+                            viewBox="0 0 30 18" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.0001 2.97275C16.3462 4.56295 17.1667 6.67588 17.1667 8.9947C17.1667 11.3135 16.3462 13.4264 15.0001 15.0166C16.5244 16.8174 18.7227 17.9479 21.1668 17.9479C25.7692 17.9479 29.5002 13.9394 29.5002 8.9947C29.5002 4.05001 25.7692 0.0415497 21.1668 0.0415497C18.7227 0.0415497 16.5244 1.17199 15.0001 2.97275ZM15.0001 2.97275C13.4757 1.17199 11.2774 0.0415497 8.83333 0.0415497C4.23096 0.0415497 0.5 4.05001 0.5 8.9947C0.5 13.9394 4.23096 17.9479 8.83333 17.9479C11.2774 17.9479 13.4757 16.8174 15.0001 15.0166C13.654 13.4264 12.8335 11.3135 12.8335 8.9947C12.8335 6.67588 13.654 4.56295 15.0001 2.97275Z"
+                                fill="#5263B4" />
+                        </svg>
+                        <svg class="absolute right-0" xmlns="http://www.w3.org/2000/svg" width="178" height="46"
+                            viewBox="0 0 178 46" fill="none">
+                            <path
+                                d="M99.2345 45.1049C130.741 45.4243 164.827 31.5572 178.001 23.3906C167.435 26.9219 138.735 35.7651 110.04 31.9115C85.3149 28.5909 48.6467 10.2545 36.0819 0.462521L0.227595 0.0990799C20.1483 14.1725 61.6729 44.7242 99.2345 45.1049Z"
+                                fill="url(#paint0_linear_2303_36)" fill-opacity="0.5" />
+                            <defs>
+                                <linearGradient id="paint0_linear_2303_36" x1="88.777" y1="44.9989" x2="89.223"
+                                    y2="1.00119" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#506DF5" />
+                                    <stop offset="1" stop-color="#010204" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="card-body p-2">
+                            <h2 class="card-title text-white text-4xl font-bold pl-12">Withdraw</h2>
+                            <div class="card-actions justify-end">
+                                <h3 class="text-4xl font-bold text-white pe-12">$700</h3>
+                            </div>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="178" height="44" viewBox="0 0 178 44"
+                            fill="none">
+                            <path
+                                d="M78.542 -8.39233e-05C47.0344 -8.59952e-05 13.0903 14.2118 0 22.5115C10.5292 18.8733 39.1378 9.73962 67.8705 13.3022C92.6283 16.372 129.48 34.3358 142.144 43.9999H178C157.938 30.1291 116.106 -8.14532e-05 78.542 -8.39233e-05Z"
+                                fill="url(#paint0_linear_2303_35)" fill-opacity="0.5" />
+                            <defs>
+                                <linearGradient id="paint0_linear_2303_35" x1="89" y1="-8.39233e-05" x2="89"
+                                    y2="43.9999" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#506DF5" />
+                                    <stop offset="1" stop-color="#010204" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Balance Card  -->
+                <div>
+                    <div class="card w-96 bg-[#263268]">
+                        <svg class="ml-2.5 mt-2.5" xmlns="http://www.w3.org/2000/svg" width="30" height="18"
+                            viewBox="0 0 30 18" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.0001 2.97275C16.3462 4.56295 17.1667 6.67588 17.1667 8.9947C17.1667 11.3135 16.3462 13.4264 15.0001 15.0166C16.5244 16.8174 18.7227 17.9479 21.1668 17.9479C25.7692 17.9479 29.5002 13.9394 29.5002 8.9947C29.5002 4.05001 25.7692 0.0415497 21.1668 0.0415497C18.7227 0.0415497 16.5244 1.17199 15.0001 2.97275ZM15.0001 2.97275C13.4757 1.17199 11.2774 0.0415497 8.83333 0.0415497C4.23096 0.0415497 0.5 4.05001 0.5 8.9947C0.5 13.9394 4.23096 17.9479 8.83333 17.9479C11.2774 17.9479 13.4757 16.8174 15.0001 15.0166C13.654 13.4264 12.8335 11.3135 12.8335 8.9947C12.8335 6.67588 13.654 4.56295 15.0001 2.97275Z"
+                                fill="#5263B4" />
+                        </svg>
+                        <svg class="absolute right-0" xmlns="http://www.w3.org/2000/svg" width="178" height="46"
+                            viewBox="0 0 178 46" fill="none">
+                            <path
+                                d="M99.2345 45.1049C130.741 45.4243 164.827 31.5572 178.001 23.3906C167.435 26.9219 138.735 35.7651 110.04 31.9115C85.3149 28.5909 48.6467 10.2545 36.0819 0.462521L0.227595 0.0990799C20.1483 14.1725 61.6729 44.7242 99.2345 45.1049Z"
+                                fill="url(#paint0_linear_2303_36)" fill-opacity="0.5" />
+                            <defs>
+                                <linearGradient id="paint0_linear_2303_36" x1="88.777" y1="44.9989" x2="89.223"
+                                    y2="1.00119" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#506DF5" />
+                                    <stop offset="1" stop-color="#010204" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="card-body p-2">
+                            <h2 class="card-title text-white text-4xl font-bold pl-12">Balance</h2>
+                            <div class="card-actions justify-end">
+                                <h3 class="text-4xl font-bold text-white pe-12">$<span id="balance-total">1240</span>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="178" height="44" viewBox="0 0 178 44"
+                            fill="none">
+                            <path
+                                d="M78.542 -8.39233e-05C47.0344 -8.59952e-05 13.0903 14.2118 0 22.5115C10.5292 18.8733 39.1378 9.73962 67.8705 13.3022C92.6283 16.372 129.48 34.3358 142.144 43.9999H178C157.938 30.1291 116.106 -8.14532e-05 78.542 -8.39233e-05Z"
+                                fill="url(#paint0_linear_2303_35)" fill-opacity="0.5" />
+                            <defs>
+                                <linearGradient id="paint0_linear_2303_35" x1="89" y1="-8.39233e-05" x2="89"
+                                    y2="43.9999" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#506DF5" />
+                                    <stop offset="1" stop-color="#010204" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="my-28">
+            <div class="grid grid-cols-2 justify-items-center">
+                <!-- Deposit Amount input Card  -->
+                <div class="card bg-[#263268] w-3/4">
+                    <svg class="ml-2.5 mt-2.5" xmlns="http://www.w3.org/2000/svg" width="30" height="18"
+                        viewBox="0 0 30 18" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.0001 2.97275C16.3462 4.56295 17.1667 6.67588 17.1667 8.9947C17.1667 11.3135 16.3462 13.4264 15.0001 15.0166C16.5244 16.8174 18.7227 17.9479 21.1668 17.9479C25.7692 17.9479 29.5002 13.9394 29.5002 8.9947C29.5002 4.05001 25.7692 0.0415497 21.1668 0.0415497C18.7227 0.0415497 16.5244 1.17199 15.0001 2.97275ZM15.0001 2.97275C13.4757 1.17199 11.2774 0.0415497 8.83333 0.0415497C4.23096 0.0415497 0.5 4.05001 0.5 8.9947C0.5 13.9394 4.23096 17.9479 8.83333 17.9479C11.2774 17.9479 13.4757 16.8174 15.0001 15.0166C13.654 13.4264 12.8335 11.3135 12.8335 8.9947C12.8335 6.67588 13.654 4.56295 15.0001 2.97275Z"
+                            fill="#5263B4" />
+                    </svg>
+                    <svg class="absolute right-0" xmlns="http://www.w3.org/2000/svg" width="178" height="46"
+                        viewBox="0 0 178 46" fill="none">
+                        <path
+                            d="M99.2345 45.1049C130.741 45.4243 164.827 31.5572 178.001 23.3906C167.435 26.9219 138.735 35.7651 110.04 31.9115C85.3149 28.5909 48.6467 10.2545 36.0819 0.462521L0.227595 0.0990799C20.1483 14.1725 61.6729 44.7242 99.2345 45.1049Z"
+                            fill="url(#paint0_linear_2303_36)" fill-opacity="0.5" />
+                        <defs>
+                            <linearGradient id="paint0_linear_2303_36" x1="88.777" y1="44.9989" x2="89.223" y2="1.00119"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#506DF5" />
+                                <stop offset="1" stop-color="#010204" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="card-body">
+                        <h2 class="card-title text-white text-2xl font-bold">Please Deposit</h2>
+                        <input id="deposit-field" type="text" placeholder="$ amount you want to deposit"
+                            class="input input-bordered input-accent w-full max-w-xs" />
+                        <div class="card-actions pt-3">
+                            <button id="btn-deposit" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="178" height="44" viewBox="0 0 178 44" fill="none">
+                        <path
+                            d="M78.542 -8.39233e-05C47.0344 -8.59952e-05 13.0903 14.2118 0 22.5115C10.5292 18.8733 39.1378 9.73962 67.8705 13.3022C92.6283 16.372 129.48 34.3358 142.144 43.9999H178C157.938 30.1291 116.106 -8.14532e-05 78.542 -8.39233e-05Z"
+                            fill="url(#paint0_linear_2303_35)" fill-opacity="0.5" />
+                        <defs>
+                            <linearGradient id="paint0_linear_2303_35" x1="89" y1="-8.39233e-05" x2="89" y2="43.9999"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#506DF5" />
+                                <stop offset="1" stop-color="#010204" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <!-- Withdraw Amount input Card  -->
+                <div class="card bg-[#263268] w-3/4">
+                    <svg class="ml-2.5 mt-2.5" xmlns="http://www.w3.org/2000/svg" width="30" height="18"
+                        viewBox="0 0 30 18" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.0001 2.97275C16.3462 4.56295 17.1667 6.67588 17.1667 8.9947C17.1667 11.3135 16.3462 13.4264 15.0001 15.0166C16.5244 16.8174 18.7227 17.9479 21.1668 17.9479C25.7692 17.9479 29.5002 13.9394 29.5002 8.9947C29.5002 4.05001 25.7692 0.0415497 21.1668 0.0415497C18.7227 0.0415497 16.5244 1.17199 15.0001 2.97275ZM15.0001 2.97275C13.4757 1.17199 11.2774 0.0415497 8.83333 0.0415497C4.23096 0.0415497 0.5 4.05001 0.5 8.9947C0.5 13.9394 4.23096 17.9479 8.83333 17.9479C11.2774 17.9479 13.4757 16.8174 15.0001 15.0166C13.654 13.4264 12.8335 11.3135 12.8335 8.9947C12.8335 6.67588 13.654 4.56295 15.0001 2.97275Z"
+                            fill="#5263B4" />
+                    </svg>
+                    <svg class="absolute right-0" xmlns="http://www.w3.org/2000/svg" width="178" height="46"
+                        viewBox="0 0 178 46" fill="none">
+                        <path
+                            d="M99.2345 45.1049C130.741 45.4243 164.827 31.5572 178.001 23.3906C167.435 26.9219 138.735 35.7651 110.04 31.9115C85.3149 28.5909 48.6467 10.2545 36.0819 0.462521L0.227595 0.0990799C20.1483 14.1725 61.6729 44.7242 99.2345 45.1049Z"
+                            fill="url(#paint0_linear_2303_36)" fill-opacity="0.5" />
+                        <defs>
+                            <linearGradient id="paint0_linear_2303_36" x1="88.777" y1="44.9989" x2="89.223" y2="1.00119"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#506DF5" />
+                                <stop offset="1" stop-color="#010204" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="card-body">
+                        <h2 class="card-title text-white text-2xl font-bold">Please Withdraw</h2>
+                        <input type="text" placeholder="$ amount you want to withdraw"
+                            class="input input-bordered input-accent w-full max-w-xs" />
+                        <div class="card-actions pt-3">
+                            <button id="" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="178" height="44" viewBox="0 0 178 44" fill="none">
+                        <path
+                            d="M78.542 -8.39233e-05C47.0344 -8.59952e-05 13.0903 14.2118 0 22.5115C10.5292 18.8733 39.1378 9.73962 67.8705 13.3022C92.6283 16.372 129.48 34.3358 142.144 43.9999H178C157.938 30.1291 116.106 -8.14532e-05 78.542 -8.39233e-05Z"
+                            fill="url(#paint0_linear_2303_35)" fill-opacity="0.5" />
+                        <defs>
+                            <linearGradient id="paint0_linear_2303_35" x1="89" y1="-8.39233e-05" x2="89" y2="43.9999"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#506DF5" />
+                                <stop offset="1" stop-color="#010204" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1>Baap Er Bank Dashboard</h1>
+    </footer>
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
